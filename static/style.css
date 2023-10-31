@@ -1,0 +1,456 @@
+body {
+    margin: 4rem auto;
+    max-width: 50rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: "Liberation Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: #221E1E;
+    /*background-color: #2E1A4A;*/
+    /* for light theme #2E1A4A */
+    background-attachment: fixed;
+    overflow-wrap: break-word;
+    line-height: 1.4rem;
+}
+
+::selection {
+    background-color: #6F4E37;
+}
+
+input::selection,
+textarea::selection {
+    color: lightgray;
+}
+
+h1,
+h2,
+h3,
+nav {
+    display: inline;
+}
+
+ul {
+    padding-inline-start: 1rem;
+}
+
+/* Tag (and something else) list */
+nav#tag-list {
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    margin: 1rem;
+    display: block;
+}
+
+/* Menu with more comprehensive list of threads */
+nav#menu {
+    border: 2px solid #f1f1f1;
+    background-color: 6d6666;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+nav#menu p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Thread index navigation icons */
+article header.thread-header-index {
+    position: relative;
+    display: flex;
+}
+
+article header span.thread-full-heading-wrapper {
+    margin-right: 5rem;
+    min-width: 0;
+}
+
+nav.thread-index-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav.thread-index-nav a {
+    text-decoration: none;
+}
+
+/* General hyperlink style */
+a:link {
+    color: #F5DEB3;
+}
+
+a:visited {
+    color: #F5DEB3;
+}
+
+a:hover {
+    text-decoration: overline underline;
+    color: #F5DEB3;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* Spoiler rendering */
+span.spoiler {
+    background-color: darkgray;
+    color: darkgray;
+    padding: 0 1px;
+}
+
+span.spoiler a {
+    color: darkgray;
+}
+
+span.spoiler:hover,
+span.spoiler:hover a,
+span.spoiler:active,
+span.spoiler:active a {
+    background-color: black;
+    color: lightgray;
+}
+
+/* Block quote rendering */
+blockquote {
+    margin: 0;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 0.01rem dotted;
+    border-bottom: 0.01rem dotted;
+    color: #3FFF00;
+}
+
+/* Main thread area style */
+article {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #f1f1f1;
+    border-radius: 7px;
+    border-width: thin;
+}
+
+/* Thread post style */
+section {
+    margin: 1rem 0.5rem 1rem 0.3rem;
+}
+
+section p {
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+section header {
+    color: gray;
+}
+
+section header h2,
+section header h3 {
+    font-size: 1.1rem;
+}
+
+hr.first-post-delimiter {
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-style: dashed;
+}
+
+/* Form style */
+form {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+input {
+    width: 50%;
+    height: auto;
+    accent-color: #865DFF;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    background-color: #F0F0F0;
+}
+
+
+textarea {
+    width: 98%;
+    height: auto;
+    accent-color: #865DFF;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    background-color: #F0F0F0;
+}
+
+select {
+    font-size: 1rem;
+    background-color: #F0F0F0;
+}
+
+option {
+    color: white;
+    background-color: #865DFF;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+    border-radius: 6px;
+}
+
+/* Subback */
+
+table.subback {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #f1f1f1;
+    border-radius: 7px;
+    border-width: thin;
+    table-layout: fixed;
+}
+
+table.subback th:nth-child(2) {
+    width: 40%;
+}
+
+table.subback th:nth-child(5) {
+    width: 20%;
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #f1f1f1;
+    border-radius: 7px;
+    border-width: thin;
+}
+
+/* Thread up and down nav */
+
+nav.thread_vertical_nav {
+    display: block;
+    margin: 1rem;
+    text-align: center;
+}
+
+nav.thread_vertical_nav a {
+    text-decoration: none;
+}
+
+/* Return and related links nav */
+
+nav.return-nav {
+    margin-left: 1rem;
+    text-shadow: 1px 1px 10px black;
+}
+
+/* About page */
+article.about h1 {
+    font-size: 2em;
+}
+
+article.about {
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+article.about h2,
+article.about h3,
+article.about h4,
+article.about h5,
+article.about h6 {
+    padding: 1rem;
+}
+
+/* Required :{ */
+
+tr.required-field {
+    display: none;
+}
+
+/* Menu box */
+.menu-link {
+    padding-right: 0.3rem;
+}
+
+/* Thread title nav, tools */
+
+nav.thread-title-nav {
+    margin-left: 0.2rem;
+}
+
+nav.thread-title-nav span {
+    cursor: pointer;
+    padding: 0.15rem;
+    border-radius: 2rem;
+    background-color: #FFDEAD;
+}
+
+nav.thread-title-nav span:hover {
+    background-color: #1E1C1C;
+}
+
+nav.thread-title-nav span:active {
+    cursor: copy;
+    background-color: #1E1C1C;
+}
+
+/* TEXT EFFECTS */
+.redtext {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: red;
+    text-transform: uppercase;
+}
+
+
+.threedtext {
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.bluetext {
+    color: aqua;
+}
+
+.glow {
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0.5em #FFFFFF, 0 0 0.6em #FFFFFF;
+    }
+
+    to {
+        text-shadow: 0 0 1.1em #00FF00, 0 0 1.2em #00FF00;
+    }
+}
+
+.glory {
+    color: white;
+    text-align: center;
+    -webkit-animation: glory 1s ease-in-out infinite alternate;
+    -moz-animation: glory 1s ease-in-out infinite alternate;
+    animation: glory 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glory {
+    from {
+        text-shadow: 0 0 0.5em #FFFFFF, 0 0 0.6em #FFFFFF;
+    }
+
+    to {
+        text-shadow: 0 0 1.1em #FFD700, 0 0 1.2em #FFD700;
+    }
+}
+
+.threedtext {
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.rainbowtext {
+    animation: rainbow 1s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        color: crimson;
+    }
+
+    25% {
+        color: violet;
+    }
+
+    50% {
+        color: aqua;
+    }
+
+    75% {
+        color: violet;
+    }
+
+    100% {
+        color: crimson;
+    }
+}
+
+.shaketext {
+    animation: shake 0.5s infinite;
+    display: inline-block;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+}
