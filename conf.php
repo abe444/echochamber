@@ -1,8 +1,12 @@
 <?php
 
+// Randomized promo upon refresh
+$promos = ['promo 1', 'promo 2', 'promo 3', 'promo 4'];
+$select_promos = array_rand($promos);
+
 $CONF = array(
     'BBS_NAME'                    => '&#10013;',
-    'BBS_PROMO'                   => 'あなたは世界の光です',
+    'BBS_PROMO'                   => $promos[$select_promos],
 
     'META_TITLE_DELIMITER'        => ' — ', // mind the spaces
     'META_DESCRIPTION'            => 'Comfy tiny BBS.',
